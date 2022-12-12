@@ -11,7 +11,7 @@ class ccitt_crc_xmodem:
         # Inicializamos el CRC con el valor inicial predeterminado
         crc = self.init_crc_value
 
-        # Iteramos sobre cada byte de datos
+         # Iteramos sobre cada byte de datos
         for byte in data:
             # Aplicamos una operación XOR en el byte actual y el CRC actual
             crc ^= byte << 8
