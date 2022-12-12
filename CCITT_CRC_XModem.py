@@ -82,16 +82,16 @@ CRC_b_bytes = obj.int2bytes(CRC_b_int)
 CRC_c_bytes = obj.int2bytes(CRC_c_int)
 CRC_d_bytes = obj.int2bytes(CRC_d_int)
 
-assert CRC_a_bytes == bytearray([0x41, 0x84])
+assert CRC_a_bytes == bytearray([0x40, 0x84])
 print('El CRC: {} es correcto'.format([CRC_a_bytes.hex()[x:x+2] for x in range(0, len(CRC_a_bytes.hex()), 2)]))
 
-assert CRC_b_bytes == bytearray([0x61, 0xC6])
+assert CRC_b_bytes == bytearray([0x60, 0xC6])
 print('El CRC: {} es correcto'.format([CRC_b_bytes.hex()[x:x+2] for x in range(0, len(CRC_b_bytes.hex()), 2)]))
 
-assert CRC_c_bytes == bytearray([0x31, 0x63])
+assert CRC_c_bytes == bytearray([0x30, 0x63])
 print('El CRC: {} es correcto'.format([CRC_c_bytes.hex()[x:x+2] for x in range(0, len(CRC_c_bytes.hex()), 2)]))
 
-assert CRC_d_bytes == bytearray([0x51, 0xA5])
+assert CRC_d_bytes == bytearray([0x50, 0xA5])
 print('El CRC: {} es correcto'.format([CRC_d_bytes.hex()[x:x+2] for x in range(0, len(CRC_d_bytes.hex()), 2)]))
 
 print("\nCRCs calculados correctamente..\n")
