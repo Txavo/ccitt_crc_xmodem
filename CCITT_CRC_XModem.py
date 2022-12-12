@@ -72,7 +72,7 @@ d_bytesToSend =  (struct.pack('B', CntMessage)  +
 
 obj = ccitt_crc_xmodem(0x1021, 0x0000)
 
-CRC_a_int = obj.ccitt_crc16(a_bytesToSend)
+CRC_a_int = obj.ccitt_crc16(a_bytesToSend) 
 CRC_b_int = obj.ccitt_crc16(b_bytesToSend)
 CRC_c_int = obj.ccitt_crc16(c_bytesToSend)
 CRC_d_int = obj.ccitt_crc16(d_bytesToSend)
