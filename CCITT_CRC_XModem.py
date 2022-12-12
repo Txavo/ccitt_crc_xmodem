@@ -1,7 +1,7 @@
 import struct
 
 class ccitt_crc_xmodem:
-    def __init__(self, seed, init_crc_value):
+    def __init__(self, seed, init_crc_value): 
         self.seed = seed
         self.init_crc_value = init_crc_value
 
